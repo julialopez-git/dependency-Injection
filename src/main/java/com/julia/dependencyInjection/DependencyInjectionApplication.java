@@ -4,7 +4,10 @@ import com.julia.dependencyInjection.controllers.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-
+/*@ComponentScan(basePackages = {"com.julia.dependencyInjection", "com.julia.anotherPackage"})
+This is an annotation to tell spring to look for spring managed components
+in different packages that are not the one holding the JavaApplicationClass
+ */
 @SpringBootApplication
 public class DependencyInjectionApplication {
 
